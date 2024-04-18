@@ -164,16 +164,16 @@ func (ga GeneticAlgorithm) RunAlgorithm() Chromosome {
 		bestConflictsSum := ga.getBestChromosome().conflictsSum
 		log.
 			Info().
-      Int("populationSize", len(ga.population)).
+			Int("populationSize", len(ga.population)).
 			Int("epochCounter", epochCounter).
 			Int("bestConflictsSum", bestConflictsSum).
 			Msg("running ga epoch")
 		if bestConflictsSum == 0 {
 			return ga.getBestChromosome()
 		}
-    if epochCounter > 50000 {
+		if epochCounter > 50000 {
 			return ga.getBestChromosome()
-    }
+		}
 	}
 }
 
