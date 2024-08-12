@@ -1,4 +1,4 @@
-module github.com/andreashdez/N-Queens-Problem-Go
+module github.com/andreashdez/n_queens_problem_go
 
 go 1.22
 
